@@ -1,0 +1,8 @@
+{
+  "versionCode": 11006,
+  "versionName": "1.1.6",
+  "downloadUrl": "https://github.com/lesangmd/mdict-releases/releases/latest",
+  "releasePage": "https://github.com/lesangmd/mdict-releases/releases",
+  "releaseNotes": "Sửa các lỗi đã biết và cải tiến hiệu năng. Bổ sung thêm các chủ đề từ vựng, thuật ngữ mới.",
+  "minAndroidApi": 31
+}
