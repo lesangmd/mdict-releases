@@ -1,0 +1,56 @@
+{
+  "schema": "mdict-offline-data-manifest/v1",
+  "dataVersion": "2026.09.30.013407",
+  "publishedAt": "2026-09-30T01:34:07+00:00",
+  "minimumAppVersionCode": 12001,
+  "factory": false,
+  "channel": "stable",
+  "modules": {
+    "dictionary": {
+      "module": "dictionary",
+      "baseline": {
+        "path": "dictionary/dictionary.db",
+        "schema": "nahmed-dictionary-sqlite/v1",
+        "recordCount": 66876,
+        "sha256": "711ed01e62ff0e85ee8ced0cfaf0f0327165b8e5c6855890ff8ec764866ebc35",
+        "sourceSchema": "nahmed-dictionary-snapshot/v1",
+        "sourceSha256": "02ece14581521042390f549fd7a435ff0b7ce2ebd41df54975264ffcb481d029"
+      },
+      "packages": [],
+      "waveSchema": "nahmed-dictionary-wave/v1"
+    },
+    "learning": {
+      "module": "learning_terminology",
+      "baseline": {
+        "path": "learning/learning-lessons.json",
+        "schema": "nahmed-learning-terminology-baseline/v1",
+        "recordCount": 220,
+        "sha256": "bcd7cf6976a1c693ad67b5395488a2aee986569ae9c4aaed068e40479871416a"
+      },
+      "packages": [],
+      "waveSchema": "nahmed-learning-terminology-wave/v1"
+    },
+    "appliedEnglish": {
+      "module": "applied_medical_english",
+      "baseline": {
+        "path": "applied-english/applied-medical-english.json",
+        "schema": "nahmed-applied-medical-english-baseline/v1",
+        "recordCount": 200,
+        "sha256": "b8536bef80aa875745c69e5c8812ca0b4df2711455bcd41fcaa6d92978151bd5"
+      },
+      "packages": [],
+      "waveSchema": "nahmed-applied-medical-english-wave/v1"
+    },
+    "medicalStories": {
+      "module": "medical_stories",
+      "baseline": {
+        "path": "medical-stories/medical-stories.json",
+        "schema": "nahmed-medical-stories-baseline/v1",
+        "recordCount": 110,
+        "sha256": "03be00d8ac3d60d93564d737386203a756cd32d0ab62265f1aa660506da8c6f2"
+      },
+      "packages": [],
+      "waveSchema": "nahmed-medical-stories-wave/v1"
+    }
+  }
+}
