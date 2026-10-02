@@ -1,8 +1,8 @@
 {
-  "versionCode": 11006,
-  "versionName": "1.1.6",
-  "downloadUrl": "https://github.com/lesangmd/mdict-releases/releases/latest",
-  "releasePage": "https://github.com/lesangmd/mdict-releases/releases",
-  "releaseNotes": "Sửa các lỗi đã biết và cải tiến hiệu năng. Bổ sung thêm các chủ đề từ vựng, thuật ngữ mới.",
+  "versionCode": 12009,
+  "versionName": "1.2.9",
+  "downloadUrl": "https://github.com/lesangmd/mdict/releases/latest/download/mDict-latest.apk",
+  "releasePage": "https://github.com/lesangmd/mdict/releases/latest",
+  "releaseNotes": "Bản baseline Android mới nhất. Giữ toàn bộ runtime ổn định của v1.2.8 và sửa biểu tượng launcher với nền trắng, bo góc nhẹ, safe-zone padding để tránh crop trên các launcher/OEM khác nhau.",
   "minAndroidApi": 31
 }
