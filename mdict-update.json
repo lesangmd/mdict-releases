@@ -1,9 +1,9 @@
 {
-  "versionCode": 12011,
-  "versionName": "1.2.11",
+  "versionCode": 12015,
+  "versionName": "1.2.15",
   "downloadUrl": "https://github.com/lesangmd/mdict/releases/latest/download/mDict-latest.apk",
   "releasePage": "https://github.com/lesangmd/mdict/releases/latest",
-  "releaseNotes": "Baseline Android mới nhất. Giữ các sửa lỗi Membership login và header-home routing của v1.2.10; đồng thời chuẩn hóa chế độ tối cho Medical Stories, shared modal shell, hộp thoại native và system bars. Offline-First, data channel, learning filters và production signing identity được giữ nguyên.",
-  "sha256": "2c3c870cc8d3b4dc45ce73b16461238f36f9c0ab9dfde98fd65d6e00a6ea6065",
+  "releaseNotes": "mDict Android v1.2.15 — Embedded Membership Login & About UX. Tích hợp form đăng nhập MEDIPHARM trong popup của ứng dụng, giữ xác thực do Membership quản lý; viết lại trang Giới thiệu cho người dùng; kế thừa các sửa chế độ tối, nhất quán ngôn ngữ và cơ chế tự động kiểm tra cập nhật.",
+  "sha256": "96524f78ec40be997d48917c685ed16cf866395a709af48b89784ff08ea4ffbe",
   "minAndroidApi": 31
 }
