@@ -3,9 +3,10 @@
   "versionName": "1.2.17",
   "downloadUrl": "https://github.com/lesangmd/mdict/releases/latest/download/mDict-latest.apk",
   "releasePage": "https://github.com/lesangmd/mdict/releases/latest",
-  "releaseNotes": "mDict Android v1.2.17 — Native Membership Login Popup. Form đăng nhập được nhúng trực tiếp trong APK; chỉ khi người dùng bấm ĐĂNG NHẬP ứng dụng mới kết nối Membership để xác thực. Kế thừa cơ chế kiểm tra cập nhật nền, ngôn ngữ giao diện nhất quán, dark mode và dữ liệu Offline-First.",
+  "releaseNotes": "mDict Android v1.2.17 — Native Membership Login Popup. Đây là baseline Android được hỗ trợ hiện tại. Các phiên bản cũ cần cập nhật để nhận cơ chế đăng nhập MEDIPHARM mới, sửa lỗi giao diện và kênh cập nhật ổn định.",
   "sha256": "1fcb62ca6ec4b1a72e4a176c8cd57691bb4378f323c9579f9c44f10d019d7ea8",
   "minAndroidApi": 31,
-  "minimumSupportedVersionCode": 12012,
-  "updatePriority": "high"
+  "minimumSupportedVersionCode": 12017,
+  "updatePriority": "required",
+  "required": true
 }
