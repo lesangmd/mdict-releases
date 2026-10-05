@@ -1,7 +1,7 @@
 {
   "schema": "mdict-offline-data-manifest/v1",
-  "dataVersion": "2026.09.30.013407",
-  "publishedAt": "2026-09-30T01:34:07+00:00",
+  "dataVersion": "2026.10.05.031057",
+  "publishedAt": "2026-10-05T03:10:57Z",
   "minimumAppVersionCode": 12017,
   "factory": false,
   "channel": "stable",
@@ -27,8 +27,15 @@
         "recordCount": 220,
         "sha256": "bcd7cf6976a1c693ad67b5395488a2aee986569ae9c4aaed068e40479871416a"
       },
-      "packages": [],
-      "waveSchema": "nahmed-learning-terminology-wave/v1"
+      "packages": [
+        {
+          "schema": "nahmed-learning-terminology-wave/v1",
+          "url": "https://raw.githubusercontent.com/lesangmd/mdict-releases/main/data/packages/MEDIPHARM-Learning-Terminology-Clinical-Pharmacy-B03A-221-230-v1.0.0.zip",
+          "sha256": "d91481ea14d81bee6585f27aaa7c97b1ac45485fc2a26ac47a7023daea2071fa"
+        }
+      ],
+      "waveSchema": "nahmed-learning-terminology-wave/v1",
+      "recordCountEffective": 230
     },
     "appliedEnglish": {
       "module": "applied_medical_english",
