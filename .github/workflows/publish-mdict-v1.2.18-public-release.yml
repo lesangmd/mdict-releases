@@ -1,0 +1,37 @@
+name: Publish mDict v1.2.18 Public APK Release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Download accepted production APK from public MEDIPHARM origin
+        shell: bash
+        run: |
+          set -euo pipefail
+          URL="https://www.sachyhoc.com/wp-content/plugins/mdict-android-delivery-bridge/assets/mDict-latest.apk"
+          curl --fail --location --retry 3 --retry-delay 2 "$URL" -o mDict-latest.apk
+          test "$(sha256sum mDict-latest.apk | awk '{print $1}')" = "a8b5288acb4c206a584d4ff70db8b9ed0e6de173fa5ad6da0506b0dc245e503f"
+          cp mDict-latest.apk mDict-v1.2.18-release.apk
+          printf '%s  %s\n' "a8b5288acb4c206a584d4ff70db8b9ed0e6de173fa5ad6da0506b0dc245e503f" "mDict-latest.apk" > SHA256SUMS.txt
+          printf '%s  %s\n' "a8b5288acb4c206a584d4ff70db8b9ed0e6de173fa5ad6da0506b0dc245e503f" "mDict-v1.2.18-release.apk" >> SHA256SUMS.txt
+
+      - name: Publish v1.2.18 as public Latest release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          NOTES="mDict Android v1.2.18 — Direct APK Installer Update. Signed with the canonical production certificate retained from v1.2.17. Adds in-app APK download, SHA/package/version/signer verification, and direct handoff to the Android package installer."
+          if gh release view v1.2.18 >/dev/null 2>&1; then
+            gh release upload v1.2.18 mDict-latest.apk mDict-v1.2.18-release.apk SHA256SUMS.txt --clobber
+            gh release edit v1.2.18 --title "mDict v1.2.18" --notes "$NOTES" --latest
+          else
+            gh release create v1.2.18 mDict-latest.apk mDict-v1.2.18-release.apk SHA256SUMS.txt --title "mDict v1.2.18" --notes "$NOTES" --latest
+          fi
