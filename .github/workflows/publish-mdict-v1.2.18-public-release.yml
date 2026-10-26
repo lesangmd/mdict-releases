@@ -51,7 +51,6 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          sdkmanager --install "platforms;android-35" "build-tools;35.0.0" >/dev/null
           SDK="${ANDROID_HOME:-${ANDROID_SDK_ROOT:-$HOME/.android/sdk}}"
           APK=mdict-v1.2.18-public-release/mDict-latest.apk
           BADGING="$("$SDK/build-tools/35.0.0/aapt" dump badging "$APK" | head -n 1)"
