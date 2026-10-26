@@ -1,3 +1,7 @@
+PUBLISHING BLOCKED (2026-10-26): The uploaded APKs pass SHA-256 but FAIL Android APK signature verification. Target SDK 35 requires APK Signature Scheme v2+, which is missing. DO NOT publish these APKs as Latest, update the manifest, or advertise this binary. See PUBLICATION-BLOCKER-2026-10-26.md. First rebuild/re-sign using the exact canonical v1.2.17 production signer and re-verify with apksigner.
+
+---
+
 mDict v1.2.18 - Public Release package
 
 IMPORTANT: GitHub repository lesangmd/mdict is PRIVATE. Users cannot download assets from its releases. Publish the binaries in PUBLIC repository lesangmd/mdict-releases.
