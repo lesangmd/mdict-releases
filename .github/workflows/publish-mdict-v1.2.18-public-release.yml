@@ -32,8 +32,20 @@ jobs:
           test "$(sha256sum mDict-latest.apk | awk '{print $1}')" = "a8b5288acb4c206a584d4ff70db8b9ed0e6de173fa5ad6da0506b0dc245e503f"
           echo "PASS uploaded APK binary identity and release checksums"
 
-      - name: Install Android signature verification tools
-        uses: android-actions/setup-android@v3
+      - name: Prepare Android signature verification tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          SDK="${ANDROID_HOME:-/usr/local/lib/android/sdk}"
+          echo "ANDROID_HOME=$SDK" >> "$GITHUB_ENV"
+          echo "ANDROID_SDK_ROOT=$SDK" >> "$GITHUB_ENV"
+          if ! test -x "$SDK/build-tools/35.0.0/apksigner" || ! test -x "$SDK/build-tools/35.0.0/aapt"; then
+            SDKMGR="$SDK/cmdline-tools/latest/bin/sdkmanager"
+            test -x "$SDKMGR"
+            "$SDKMGR" "platforms;android-35" "build-tools;35.0.0"
+          fi
+          test -x "$SDK/build-tools/35.0.0/apksigner"
+          test -x "$SDK/build-tools/35.0.0/aapt"
 
       - name: Validate version, package and canonical production signing
         shell: bash
