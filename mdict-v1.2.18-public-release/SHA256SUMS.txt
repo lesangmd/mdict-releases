@@ -1,0 +1,2 @@
+a8b5288acb4c206a584d4ff70db8b9ed0e6de173fa5ad6da0506b0dc245e503f  mDict-latest.apk
+a8b5288acb4c206a584d4ff70db8b9ed0e6de173fa5ad6da0506b0dc245e503f  mDict-v1.2.18-release.apk

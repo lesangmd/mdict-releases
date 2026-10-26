@@ -1,0 +1,13 @@
+mDict v1.2.18 - Public Release package
+
+IMPORTANT: GitHub repository lesangmd/mdict is PRIVATE. Users cannot download assets from its releases. Publish the binaries in PUBLIC repository lesangmd/mdict-releases.
+
+1. Open https://github.com/lesangmd/mdict-releases/releases/new and create tag v1.2.18.
+2. Upload both APK assets: mDict-latest.apk and mDict-v1.2.18-release.apk, together with SHA256SUMS.txt.
+3. Publish as Latest, with no prerelease/draft flags.
+4. Verify in an anonymous browser that https://github.com/lesangmd/mdict-releases/releases/latest/download/mDict-latest.apk responds with the APK (not 404/login HTML).
+5. Only after verification, update public mdict-update.json using mdict-update-v1.2.18.json, and change WordPress WebApp Android download button to public repository URL.
+6. Retain private lesangmd/mdict for Android source/signing workflows. Do not expose signing keys.
+
+Known APK SHA256: a8b5288acb4c206a584d4ff70db8b9ed0e6de173fa5ad6da0506b0dc245e503f
+Canonical signer SHA256: CA:BE:20:B2:F3:50:B0:45:0F:58:8E:C7:19:D2:E0:9A:6A:4F:8C:89:05:F8:9D:9A:A8:6C:3A:93:AA:BD:8E:73

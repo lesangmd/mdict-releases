@@ -1,0 +1,12 @@
+{
+  "versionCode": 12018,
+  "versionName": "1.2.18",
+  "downloadUrl": "https://github.com/lesangmd/mdict-releases/releases/latest/download/mDict-latest.apk",
+  "releasePage": "https://github.com/lesangmd/mdict-releases/releases/latest",
+  "releaseNotes": "mDict Android 1.2.18: tải và mở trình cài đặt APK trực tiếp trong ứng dụng; tiếp tục sử dụng xác thực MEDIPHARM và dữ liệu ngoại tuyến.",
+  "sha256": "a8b5288acb4c206a584d4ff70db8b9ed0e6de173fa5ad6da0506b0dc245e503f",
+  "minAndroidApi": 31,
+  "minimumSupportedVersionCode": 12018,
+  "updatePriority": "required",
+  "required": true
+}
